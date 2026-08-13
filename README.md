@@ -1,6 +1,158 @@
 # meteor-browser
 
-# about / install / requirements
+# 🌌 Privacy Browser
 
-Privacy Browser is a privacy-first desktop web browser built with Electron and Chromium, designed to provide a clean, modern browsing experience while keeping privacy and user control at the center. It includes a futuristic dark-space interface with an animated meteor background, real webpage navigation, tabs, private browsing, bookmarks, history, downloads, search, zoom controls, fullscreen support, a Privacy Shield, site permission controls, and optional AI features. The browser is designed to work like a normal modern web browser while providing additional privacy controls such as tracker blocking, third-party cookie restrictions, HTTPS upgrades, WebRTC controls, permission management, and isolated private browsing sessions. Optional AI functionality can be configured for services such as ChatGPT and Grok, but AI is not required to use the browser for normal web browsing. The project is built using JavaScript, HTML, CSS, Electron, and Chromium, and is intended to run as a desktop application rather than inside a normal web browser. To install the project from GitHub, first install **Node.js LTS** on your computer, which provides Node and npm and is required to install the project's dependencies. After Node.js is installed, download or clone this repository from GitHub, extract it if you downloaded it as a ZIP file, open a terminal or Command Prompt inside the project folder, and run `npm install` to install the required dependencies, including Electron. Once the installation finishes, start the browser with `npm start`, or use the provided Windows launcher if one is included in the repository. The first launch may take longer because Electron and other dependencies may need to be downloaded. A working internet connection is recommended during the initial setup. You do **not** need an IDE such as Visual Studio Code to run the browser, although an IDE can be useful if you want to modify the source code. You also do not need a ChatGPT or Grok API key to use the browser for normal browsing; those are only required if you choose to enable the corresponding AI functionality. API keys should never be hard-coded into the source code or committed to GitHub. If AI features are enabled, configure the required credentials through the browser's settings and store them securely where supported. The project is intended primarily for Windows, with macOS and Linux support depending on the included Electron configuration and launcher scripts. Because Electron uses Chromium, modern websites such as YouTube and Twitch can be accessed through the browser, although individual websites may impose their own restrictions involving DRM, authentication, permissions, or other platform-specific functionality. Privacy Browser does not claim to provide perfect anonymity or make websites completely unable to identify users; instead, it provides privacy protections and controls that reduce unnecessary tracking and give the user more control over browser data, permissions, cookies, storage, and network behavior. For developers, the basic setup is `git clone <repository-url>`, `cd <project-folder>`, `npm install`, and `npm start`. Make sure Node.js LTS and npm are installed before running these commands. After installation, the browser should open as a standalone desktop application and can be used for normal web browsing without requiring an account.
+A privacy-first desktop web browser built with **Electron + Chromium**. It combines normal web browsing with privacy controls, private tabs, a clean space-themed interface, and optional AI features.
+
+## ✨ Features
+
+* 🌐 Real Chromium web browsing
+* 🔎 Search + URL bar
+* 🗂️ Multiple tabs
+* 🕵️ Private browsing
+* 🔒 Privacy Shield
+* 🚫 Tracker blocking
+* 🍪 Cookie controls
+* 🛡️ HTTPS protection
+* 🔐 Site permissions
+* 📥 Download manager
+* ⭐ Bookmarks
+* 🕘 History
+* 🔍 Find in page
+* 🔎 Page zoom
+* 🖥️ Fullscreen
+* 🌠 Animated meteor background
+* 🎨 Dark, light, and OLED themes
+* 🤖 Optional ChatGPT and Grok integration
+* ⚙️ Customizable settings
+
+## 💻 Requirements
+
+Before installing, make sure you have:
+
+* **Windows 10/11** recommended
+* **Node.js LTS**
+* **npm** (included with Node.js)
+* Internet connection for the initial dependency installation
+
+You do **not** need Visual Studio Code or another programming editor just to run the browser.
+
+## 📦 Installation
+
+### 1. Install Node.js
+
+Download **Node.js LTS** from the official website:
+
+https://nodejs.org/
+
+Install it using the default options.
+
+### 2. Download the Browser
+
+Download this repository from GitHub using **Code → Download ZIP**, then extract it.
+
+Or clone it with:
+
+```bash
+git clone <repository-url>
+cd PrivacyBrowser
+```
+
+### 3. Install Dependencies
+
+Open Command Prompt or PowerShell inside the project folder and run:
+
+```bash
+npm install
+```
+
+This installs Electron and the other required packages.
+
+### 4. Start the Browser
+
+Run:
+
+```bash
+npm start
+```
+
+The browser should open in its own desktop window.
+
+## 🪟 Windows Launcher
+
+If the repository includes a Windows launcher, you can also double-click the provided `.bat` launcher.
+
+The launcher can install the required dependencies and start the browser automatically.
+
+## 🤖 AI Features
+
+AI features are **optional**.
+
+The browser can be used normally without ChatGPT or Grok.
+
+If you enable AI features, you may need API credentials depending on the implementation.
+
+**Never commit API keys to GitHub.**
+
+Do not put API keys directly inside the source code.
+
+## 🔐 Privacy
+
+Privacy Browser is designed to reduce unnecessary tracking and give users more control over their browsing data.
+
+Privacy features include:
+
+* Tracker blocking
+* Third-party cookie controls
+* HTTPS upgrades
+* WebRTC controls
+* Permission controls
+* Private browsing sessions
+* Site storage controls
+* Local browser data management
+
+Privacy Browser does **not** claim to provide perfect anonymity. Websites can still receive information that you intentionally provide, especially when you sign into an account.
+
+## 🛠️ Development
+
+To work on the project:
+
+```bash
+npm install
+npm start
+```
+
+Edit the source files, then restart the application to test changes.
+
+## 📁 Project Structure
+
+```text
+PrivacyBrowser/
+├── app/
+│   ├── main/
+│   ├── ui/
+│   ├── privacy/
+│   ├── security/
+│   └── ai/
+│
+├── assets/
+├── config/
+├── launch/
+├── scripts/
+├── package.json
+└── README.md
+```
+
+## ⚠️ Platform Notes
+
+Windows is the primary target.
+
+Some features may behave differently depending on the operating system, Chromium, individual websites, DRM support, or available system APIs.
+
+YouTube, Twitch, and other modern websites are accessed through Chromium and may have their own restrictions.
+
+## 📄 License
+
+See the included `LICENSE` file for licensing information.
+
 
