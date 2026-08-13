@@ -1,6 +1,6 @@
 # meteor-browser
 
-# 🌌 Privacy Browser
+# about / install / requirements
 
 A privacy-first desktop web browser built with **Electron + Chromium**. It combines normal web browsing with privacy controls, private tabs, a clean space-themed interface, and optional AI features.
 
